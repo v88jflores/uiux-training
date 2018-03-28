@@ -6,5 +6,6 @@
 </head>
 <body>
 	<h1>Hello Philippines!</h1>
+	<a href="/pages/jungle_salad/">Jungle Salad</a>
 </body>
 </html>
