@@ -1,0 +1,120 @@
+body{
+	padding: 40px;
+}
+
+@keyframes slide{
+	0%{
+		transform: translate3d(0px, 0px, 0px);
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	50%{
+		transform: translate3d(800px, 0px, 0px);
+		-webkit-transform: translate3d(800px, 0px 0px);
+	}
+	100%{
+		transform: translate3d(0px, 0px, 0px);
+		-webkit-ransform: translate3d(0px, 0px, 0px);
+	}
+}
+
+@keyframes slide_change_bg_color{
+	0%{
+		background-color: #E64A45;
+		transform: translate3d(0px, 0px, 0px);
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	20%{
+		background-color: #5D4C46;
+		transform: translate3d(146px, 0px, 0px);
+		-webkit-transform: translate3d(146px, 0px, 0px);
+	}
+	40%{
+		background-color: #4DB3B3;
+		transform: translate3d(290px, 0px, 0px);
+		-webkit-transform: translate3d(290px, 0px, 0px);
+	}
+	60%{
+		background-color: #E6772E;
+		transform: translate3d(434px, 0px, 0px);
+		-webkit-transform: translate3d(434px, 0px, 0px);
+	}
+	80%{
+		background-color: #F2C249;
+		transform: translate3d(578px, 0px, 0px);
+		-webkit-transform: translate3d(578px, 0px, 0px);
+	}
+	100%{
+		background-color: #5D4C46;
+		transform: translate3d(0px, 0px, 0px);
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+.video_output{
+	#circle_div{
+		display: block;
+		width: 200px;
+		height: 200px;
+		background-color: #171529;
+		border-radius: 100%;
+
+		animation: slide 2s infinite;
+		-webkit-animation: slide 2s infinite;
+	}
+
+	h1{text-align: center;}
+}
+
+h1{text-align: center;}
+
+.my_output{
+	display: block;
+	height: 100%;
+	margin: 80px auto 0px;
+	width: 720px;
+	position: relative;
+
+	#circle_div{
+		display: block;
+		width: 138px;
+		height: 138px;
+		background-color: #E64A45;
+		border-radius: 100%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+
+		animation: slide_change_bg_color 10s infinite;
+		-webkit-animation: slide_change_bg_color 10s infinite;
+	}
+
+	.divs_container{
+		div{
+			display: inline-block;
+			height: 400px;
+			vertical-align: top;
+			width: 140px;
+
+			&.div_1{
+				background-color: #5D4C46;
+			}
+			&.div_2{
+				background-color: #F2C249;
+			}
+			&.div_3{
+				background-color: #E6772E;
+			}
+			&.div_4{
+				background-color: #4DB3B3;
+			}
+			&.div_5{
+				background-color: #E64A45;
+			}
+			&.div_6{
+				background-color: #3D4C53;
+			}
+		}
+	}
+
+}

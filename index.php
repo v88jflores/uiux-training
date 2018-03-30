@@ -17,5 +17,6 @@
 <body>
 	<a href="/pages/jungle_salad/" target="_blank">Jungle Salad</a>
 	<a href="/pages/web_animation/css_transition" target="_blank">Web Animation | CSS Transitions</a>
+	<a href="/pages/web_animation/css_animation" target="_blank">Web Animation | CSS Animation</a>
 </body>
 </html>
